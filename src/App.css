@@ -1,0 +1,11 @@
+.containerMainPage {
+  display: flex;
+  height: 1920px;
+  width: 1080px;
+}
+/* row flex */
+
+.loc {
+  display: flex;
+  flex-direction: row;
+}
