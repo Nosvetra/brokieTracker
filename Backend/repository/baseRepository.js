@@ -13,3 +13,5 @@ class baseRepository {
     return user;
   }
 }
+
+export default baseRepository;
