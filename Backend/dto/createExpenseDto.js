@@ -17,4 +17,4 @@ class createExpenseDTO {
   }
 }
 
-export default CreateExpenseDTO;
+export default createExpenseDTO;

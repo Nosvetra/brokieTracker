@@ -20,16 +20,16 @@ const userSchema = new mongoose.Schema(
 
 userSchema.index({ email: 1 });
 
-userSchema.pre("save", () => {
-  bcrypt.hash(this.passwordHash, 10, async (err, hash) => {
-    if (err) {
-      console.log(`Error hashing password ${err}`);
-    } else {
-      this.passwordHash = hash;
-      console.log(hash);
-    }
-  });
-});
+// userSchema.pre("save", () => {
+//   bcrypt.hash(this.passwordHash, 10, async (err, hash) => {
+//     if (err) {
+//       console.log(`Error hashing password ${err}`);
+//     } else {
+//       this.passwordHash = hash;
+//       console.log(hash);
+//     }
+//   });
+// });
 
 const userSchema = mongoose.model("user", userSchema);
 export default userSchema;

@@ -1,10 +1,8 @@
 import express from "express";
+import regiterControllr from "../controller/userService.js";
 
 const router = express.Router();
 
-router.post("/register", (req, res) => {
-  res.json({ message: "this is coming from the /user route" });
-  console.log(req.body);
-});
+router.post("/register", regiterControllr.registerUser);
 
 export default router;
